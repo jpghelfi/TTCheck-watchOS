@@ -1,0 +1,842 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E8B5216F1FCE29AD00131AEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B5216E1FCE29AD00131AEE /* AppDelegate.swift */; };
+		E8B521711FCE29AD00131AEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521701FCE29AD00131AEE /* ViewController.swift */; };
+		E8B521741FCE29AD00131AEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B521721FCE29AD00131AEE /* Main.storyboard */; };
+		E8B521761FCE29AD00131AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B521751FCE29AD00131AEE /* Assets.xcassets */; };
+		E8B521791FCE29AD00131AEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B521771FCE29AD00131AEE /* LaunchScreen.storyboard */; };
+		E8B521841FCE29AD00131AEE /* TTCheck_watchOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521831FCE29AD00131AEE /* TTCheck_watchOSTests.swift */; };
+		E8B5218F1FCE29AD00131AEE /* TTCheck_watchOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B5218E1FCE29AD00131AEE /* TTCheck_watchOSUITests.swift */; };
+		E8B521941FCE29AE00131AEE /* TTCheck-watchOS WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E8B521931FCE29AE00131AEE /* TTCheck-watchOS WatchKit App.app */; };
+		E8B5219A1FCE29AE00131AEE /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8B521981FCE29AE00131AEE /* Interface.storyboard */; };
+		E8B5219C1FCE29AE00131AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B5219B1FCE29AE00131AEE /* Assets.xcassets */; };
+		E8B521A31FCE29AE00131AEE /* TTCheck-watchOS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E8B521A21FCE29AE00131AEE /* TTCheck-watchOS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E8B521A81FCE29AE00131AEE /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521A71FCE29AE00131AEE /* InterfaceController.swift */; };
+		E8B521AA1FCE29AE00131AEE /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521A91FCE29AE00131AEE /* ExtensionDelegate.swift */; };
+		E8B521AC1FCE29AE00131AEE /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521AB1FCE29AE00131AEE /* NotificationController.swift */; };
+		E8B521AE1FCE29AE00131AEE /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8B521AD1FCE29AE00131AEE /* ComplicationController.swift */; };
+		E8B521B01FCE29AE00131AEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8B521AF1FCE29AE00131AEE /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8B521801FCE29AD00131AEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B521631FCE29AD00131AEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8B5216A1FCE29AD00131AEE;
+			remoteInfo = "TTCheck-watchOS";
+		};
+		E8B5218B1FCE29AD00131AEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B521631FCE29AD00131AEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8B5216A1FCE29AD00131AEE;
+			remoteInfo = "TTCheck-watchOS";
+		};
+		E8B521951FCE29AE00131AEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B521631FCE29AD00131AEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8B521921FCE29AE00131AEE;
+			remoteInfo = "TTCheck-watchOS WatchKit App";
+		};
+		E8B521A41FCE29AE00131AEE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8B521631FCE29AD00131AEE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8B521A11FCE29AE00131AEE;
+			remoteInfo = "TTCheck-watchOS WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E8B521B81FCE29AE00131AEE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E8B521A31FCE29AE00131AEE /* TTCheck-watchOS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B521BC1FCE29AE00131AEE /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E8B521941FCE29AE00131AEE /* TTCheck-watchOS WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E8B5216B1FCE29AD00131AEE /* TTCheck-watchOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TTCheck-watchOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B5216E1FCE29AD00131AEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8B521701FCE29AD00131AEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8B521731FCE29AD00131AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8B521751FCE29AD00131AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8B521781FCE29AD00131AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8B5217A1FCE29AD00131AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B5217F1FCE29AD00131AEE /* TTCheck-watchOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TTCheck-watchOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B521831FCE29AD00131AEE /* TTCheck_watchOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCheck_watchOSTests.swift; sourceTree = "<group>"; };
+		E8B521851FCE29AD00131AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B5218A1FCE29AD00131AEE /* TTCheck-watchOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TTCheck-watchOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B5218E1FCE29AD00131AEE /* TTCheck_watchOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TTCheck_watchOSUITests.swift; sourceTree = "<group>"; };
+		E8B521901FCE29AE00131AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B521931FCE29AE00131AEE /* TTCheck-watchOS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TTCheck-watchOS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B521991FCE29AE00131AEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E8B5219B1FCE29AE00131AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8B5219D1FCE29AE00131AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B521A21FCE29AE00131AEE /* TTCheck-watchOS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TTCheck-watchOS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8B521A71FCE29AE00131AEE /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E8B521A91FCE29AE00131AEE /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E8B521AB1FCE29AE00131AEE /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E8B521AD1FCE29AE00131AEE /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		E8B521AF1FCE29AE00131AEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8B521B11FCE29AE00131AEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8B521B21FCE29AE00131AEE /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8B521681FCE29AD00131AEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B5217C1FCE29AD00131AEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B521871FCE29AD00131AEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B5219F1FCE29AE00131AEE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E8B521621FCE29AD00131AEE = {
+			isa = PBXGroup;
+			children = (
+				E8B5216D1FCE29AD00131AEE /* TTCheck-watchOS */,
+				E8B521821FCE29AD00131AEE /* TTCheck-watchOSTests */,
+				E8B5218D1FCE29AD00131AEE /* TTCheck-watchOSUITests */,
+				E8B521971FCE29AE00131AEE /* TTCheck-watchOS WatchKit App */,
+				E8B521A61FCE29AE00131AEE /* TTCheck-watchOS WatchKit Extension */,
+				E8B5216C1FCE29AD00131AEE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E8B5216C1FCE29AD00131AEE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8B5216B1FCE29AD00131AEE /* TTCheck-watchOS.app */,
+				E8B5217F1FCE29AD00131AEE /* TTCheck-watchOSTests.xctest */,
+				E8B5218A1FCE29AD00131AEE /* TTCheck-watchOSUITests.xctest */,
+				E8B521931FCE29AE00131AEE /* TTCheck-watchOS WatchKit App.app */,
+				E8B521A21FCE29AE00131AEE /* TTCheck-watchOS WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8B5216D1FCE29AD00131AEE /* TTCheck-watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				E8B5216E1FCE29AD00131AEE /* AppDelegate.swift */,
+				E8B521701FCE29AD00131AEE /* ViewController.swift */,
+				E8B521721FCE29AD00131AEE /* Main.storyboard */,
+				E8B521751FCE29AD00131AEE /* Assets.xcassets */,
+				E8B521771FCE29AD00131AEE /* LaunchScreen.storyboard */,
+				E8B5217A1FCE29AD00131AEE /* Info.plist */,
+			);
+			path = "TTCheck-watchOS";
+			sourceTree = "<group>";
+		};
+		E8B521821FCE29AD00131AEE /* TTCheck-watchOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8B521831FCE29AD00131AEE /* TTCheck_watchOSTests.swift */,
+				E8B521851FCE29AD00131AEE /* Info.plist */,
+			);
+			path = "TTCheck-watchOSTests";
+			sourceTree = "<group>";
+		};
+		E8B5218D1FCE29AD00131AEE /* TTCheck-watchOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8B5218E1FCE29AD00131AEE /* TTCheck_watchOSUITests.swift */,
+				E8B521901FCE29AE00131AEE /* Info.plist */,
+			);
+			path = "TTCheck-watchOSUITests";
+			sourceTree = "<group>";
+		};
+		E8B521971FCE29AE00131AEE /* TTCheck-watchOS WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E8B521981FCE29AE00131AEE /* Interface.storyboard */,
+				E8B5219B1FCE29AE00131AEE /* Assets.xcassets */,
+				E8B5219D1FCE29AE00131AEE /* Info.plist */,
+			);
+			path = "TTCheck-watchOS WatchKit App";
+			sourceTree = "<group>";
+		};
+		E8B521A61FCE29AE00131AEE /* TTCheck-watchOS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E8B521A71FCE29AE00131AEE /* InterfaceController.swift */,
+				E8B521A91FCE29AE00131AEE /* ExtensionDelegate.swift */,
+				E8B521AB1FCE29AE00131AEE /* NotificationController.swift */,
+				E8B521AD1FCE29AE00131AEE /* ComplicationController.swift */,
+				E8B521AF1FCE29AE00131AEE /* Assets.xcassets */,
+				E8B521B11FCE29AE00131AEE /* Info.plist */,
+				E8B521B21FCE29AE00131AEE /* PushNotificationPayload.apns */,
+			);
+			path = "TTCheck-watchOS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8B5216A1FCE29AD00131AEE /* TTCheck-watchOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B521BD1FCE29AE00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-watchOS" */;
+			buildPhases = (
+				E8B521671FCE29AD00131AEE /* Sources */,
+				E8B521681FCE29AD00131AEE /* Frameworks */,
+				E8B521691FCE29AD00131AEE /* Resources */,
+				E8B521BC1FCE29AE00131AEE /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8B521961FCE29AE00131AEE /* PBXTargetDependency */,
+			);
+			name = "TTCheck-watchOS";
+			productName = "TTCheck-watchOS";
+			productReference = E8B5216B1FCE29AD00131AEE /* TTCheck-watchOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8B5217E1FCE29AD00131AEE /* TTCheck-watchOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B521C01FCE29AE00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-watchOSTests" */;
+			buildPhases = (
+				E8B5217B1FCE29AD00131AEE /* Sources */,
+				E8B5217C1FCE29AD00131AEE /* Frameworks */,
+				E8B5217D1FCE29AD00131AEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8B521811FCE29AD00131AEE /* PBXTargetDependency */,
+			);
+			name = "TTCheck-watchOSTests";
+			productName = "TTCheck-watchOSTests";
+			productReference = E8B5217F1FCE29AD00131AEE /* TTCheck-watchOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8B521891FCE29AD00131AEE /* TTCheck-watchOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B521C31FCE29AE00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-watchOSUITests" */;
+			buildPhases = (
+				E8B521861FCE29AD00131AEE /* Sources */,
+				E8B521871FCE29AD00131AEE /* Frameworks */,
+				E8B521881FCE29AD00131AEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8B5218C1FCE29AD00131AEE /* PBXTargetDependency */,
+			);
+			name = "TTCheck-watchOSUITests";
+			productName = "TTCheck-watchOSUITests";
+			productReference = E8B5218A1FCE29AD00131AEE /* TTCheck-watchOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E8B521921FCE29AE00131AEE /* TTCheck-watchOS WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B521B91FCE29AE00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-watchOS WatchKit App" */;
+			buildPhases = (
+				E8B521911FCE29AE00131AEE /* Resources */,
+				E8B521B81FCE29AE00131AEE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8B521A51FCE29AE00131AEE /* PBXTargetDependency */,
+			);
+			name = "TTCheck-watchOS WatchKit App";
+			productName = "TTCheck-watchOS WatchKit App";
+			productReference = E8B521931FCE29AE00131AEE /* TTCheck-watchOS WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E8B521A11FCE29AE00131AEE /* TTCheck-watchOS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8B521B51FCE29AE00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-watchOS WatchKit Extension" */;
+			buildPhases = (
+				E8B5219E1FCE29AE00131AEE /* Sources */,
+				E8B5219F1FCE29AE00131AEE /* Frameworks */,
+				E8B521A01FCE29AE00131AEE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TTCheck-watchOS WatchKit Extension";
+			productName = "TTCheck-watchOS WatchKit Extension";
+			productReference = E8B521A21FCE29AE00131AEE /* TTCheck-watchOS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8B521631FCE29AD00131AEE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Juan Pablo";
+				TargetAttributes = {
+					E8B5216A1FCE29AD00131AEE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					E8B5217E1FCE29AD00131AEE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E8B5216A1FCE29AD00131AEE;
+					};
+					E8B521891FCE29AD00131AEE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E8B5216A1FCE29AD00131AEE;
+					};
+					E8B521921FCE29AE00131AEE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					E8B521A11FCE29AE00131AEE = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = E8B521661FCE29AD00131AEE /* Build configuration list for PBXProject "TTCheck-watchOS" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8B521621FCE29AD00131AEE;
+			productRefGroup = E8B5216C1FCE29AD00131AEE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8B5216A1FCE29AD00131AEE /* TTCheck-watchOS */,
+				E8B5217E1FCE29AD00131AEE /* TTCheck-watchOSTests */,
+				E8B521891FCE29AD00131AEE /* TTCheck-watchOSUITests */,
+				E8B521921FCE29AE00131AEE /* TTCheck-watchOS WatchKit App */,
+				E8B521A11FCE29AE00131AEE /* TTCheck-watchOS WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8B521691FCE29AD00131AEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B521791FCE29AD00131AEE /* LaunchScreen.storyboard in Resources */,
+				E8B521761FCE29AD00131AEE /* Assets.xcassets in Resources */,
+				E8B521741FCE29AD00131AEE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B5217D1FCE29AD00131AEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B521881FCE29AD00131AEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B521911FCE29AE00131AEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B5219C1FCE29AE00131AEE /* Assets.xcassets in Resources */,
+				E8B5219A1FCE29AE00131AEE /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B521A01FCE29AE00131AEE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B521B01FCE29AE00131AEE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8B521671FCE29AD00131AEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B521711FCE29AD00131AEE /* ViewController.swift in Sources */,
+				E8B5216F1FCE29AD00131AEE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B5217B1FCE29AD00131AEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B521841FCE29AD00131AEE /* TTCheck_watchOSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B521861FCE29AD00131AEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B5218F1FCE29AD00131AEE /* TTCheck_watchOSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8B5219E1FCE29AE00131AEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8B521AC1FCE29AE00131AEE /* NotificationController.swift in Sources */,
+				E8B521AE1FCE29AE00131AEE /* ComplicationController.swift in Sources */,
+				E8B521AA1FCE29AE00131AEE /* ExtensionDelegate.swift in Sources */,
+				E8B521A81FCE29AE00131AEE /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8B521811FCE29AD00131AEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8B5216A1FCE29AD00131AEE /* TTCheck-watchOS */;
+			targetProxy = E8B521801FCE29AD00131AEE /* PBXContainerItemProxy */;
+		};
+		E8B5218C1FCE29AD00131AEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8B5216A1FCE29AD00131AEE /* TTCheck-watchOS */;
+			targetProxy = E8B5218B1FCE29AD00131AEE /* PBXContainerItemProxy */;
+		};
+		E8B521961FCE29AE00131AEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8B521921FCE29AE00131AEE /* TTCheck-watchOS WatchKit App */;
+			targetProxy = E8B521951FCE29AE00131AEE /* PBXContainerItemProxy */;
+		};
+		E8B521A51FCE29AE00131AEE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8B521A11FCE29AE00131AEE /* TTCheck-watchOS WatchKit Extension */;
+			targetProxy = E8B521A41FCE29AE00131AEE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8B521721FCE29AD00131AEE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8B521731FCE29AD00131AEE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8B521771FCE29AD00131AEE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8B521781FCE29AD00131AEE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		E8B521981FCE29AE00131AEE /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8B521991FCE29AE00131AEE /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8B521B31FCE29AE00131AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8B521B41FCE29AE00131AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8B521B61FCE29AE00131AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DMM723BKP;
+				INFOPLIST_FILE = "TTCheck-watchOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jpg.TTCheck-watchOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		E8B521B71FCE29AE00131AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DMM723BKP;
+				INFOPLIST_FILE = "TTCheck-watchOS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jpg.TTCheck-watchOS.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		E8B521BA1FCE29AE00131AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DMM723BKP;
+				IBSC_MODULE = TTCheck_watchOS_WatchKit_Extension;
+				INFOPLIST_FILE = "TTCheck-watchOS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "jpg.TTCheck-watchOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Debug;
+		};
+		E8B521BB1FCE29AE00131AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DMM723BKP;
+				IBSC_MODULE = TTCheck_watchOS_WatchKit_Extension;
+				INFOPLIST_FILE = "TTCheck-watchOS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "jpg.TTCheck-watchOS.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.0;
+			};
+			name = Release;
+		};
+		E8B521BE1FCE29AE00131AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DMM723BKP;
+				INFOPLIST_FILE = "TTCheck-watchOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jpg.TTCheck-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8B521BF1FCE29AE00131AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DMM723BKP;
+				INFOPLIST_FILE = "TTCheck-watchOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jpg.TTCheck-watchOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8B521C11FCE29AE00131AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DMM723BKP;
+				INFOPLIST_FILE = "TTCheck-watchOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jpg.TTCheck-watchOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTCheck-watchOS.app/TTCheck-watchOS";
+			};
+			name = Debug;
+		};
+		E8B521C21FCE29AE00131AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DMM723BKP;
+				INFOPLIST_FILE = "TTCheck-watchOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jpg.TTCheck-watchOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TTCheck-watchOS.app/TTCheck-watchOS";
+			};
+			name = Release;
+		};
+		E8B521C41FCE29AE00131AEE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DMM723BKP;
+				INFOPLIST_FILE = "TTCheck-watchOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jpg.TTCheck-watchOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TTCheck-watchOS";
+			};
+			name = Debug;
+		};
+		E8B521C51FCE29AE00131AEE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9DMM723BKP;
+				INFOPLIST_FILE = "TTCheck-watchOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jpg.TTCheck-watchOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "TTCheck-watchOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8B521661FCE29AD00131AEE /* Build configuration list for PBXProject "TTCheck-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B521B31FCE29AE00131AEE /* Debug */,
+				E8B521B41FCE29AE00131AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8B521B51FCE29AE00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-watchOS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B521B61FCE29AE00131AEE /* Debug */,
+				E8B521B71FCE29AE00131AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8B521B91FCE29AE00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-watchOS WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B521BA1FCE29AE00131AEE /* Debug */,
+				E8B521BB1FCE29AE00131AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8B521BD1FCE29AE00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-watchOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B521BE1FCE29AE00131AEE /* Debug */,
+				E8B521BF1FCE29AE00131AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8B521C01FCE29AE00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-watchOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B521C11FCE29AE00131AEE /* Debug */,
+				E8B521C21FCE29AE00131AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8B521C31FCE29AE00131AEE /* Build configuration list for PBXNativeTarget "TTCheck-watchOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8B521C41FCE29AE00131AEE /* Debug */,
+				E8B521C51FCE29AE00131AEE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8B521631FCE29AD00131AEE /* Project object */;
+}
